@@ -1,4 +1,10 @@
 # main links
 main:
+  - title: "Home"
+    url: /home/
+  - title: "Posts"
+    url: /year-archive/
   - title: "About"
     url: /about/
+  - title: "Sitemap"
+    url: /sitemap/

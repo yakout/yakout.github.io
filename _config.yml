@@ -15,20 +15,13 @@ description              : "My blog."
 url                      : "https://yakout.github.io"
 baseurl                  : "/"
 repository               : "yakout/yakout.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/nn-1.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus"
   disqus:
     shortname            : yakout
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
@@ -51,14 +44,12 @@ atom_feed:
 # SEO Related
 google_site_verification : googled213cfbaf7d88e88
 bing_site_verification   : 2945F13273BB6321CB721DCDE867B643
-alexa_site_verification  :
-yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "iYakout"
 facebook:
-  username               : 
+  username               : "iYakout"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -68,12 +59,16 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://twitter.com/iYakout"
+    - "https://facebook.com/iYakout"
+    - "https://instagram.com/yakout"
+    - "https://www.linkedin.com/in/yakout"
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google"
   google:
-    tracking_id          :
+    tracking_id          : UA-106169992-1
 
 
 # Site Author
@@ -158,7 +153,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: # default is the local timezone
 
 
 plugins:

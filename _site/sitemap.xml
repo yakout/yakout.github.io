@@ -9,6 +9,15 @@
 <lastmod>2017-02-14T21:28:13+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/home/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/sitemap/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/year-archive/</loc>
 </url>
 </urlset>
