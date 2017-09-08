@@ -1,0 +1,605 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.5.1 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Coursera Deep learning [Week 4] - Ahmed Yakout</title>
+
+
+
+
+<meta name="description" content="Steps for training a neural network (Summery)">
+
+
+
+
+<meta name="author" content="Ahmed Yakout">
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Ahmed Yakout">
+<meta property="og:title" content="Coursera Deep learning [Week 4]">
+
+
+  <link rel="canonical" href="http://localhost:4000//deeplearning/deep-learning-Week-4/">
+  <meta property="og:url" content="http://localhost:4000//deeplearning/deep-learning-Week-4/">
+
+
+
+  <meta property="og:description" content="Steps for training a neural network (Summery)">
+
+
+
+
+
+  
+
+  
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/nn-1.jpg">
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-09-04T00:00:00+02:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Ahmed Yakout",
+      "url" : "http://localhost:4000/",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Ahmed Yakout Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">Ahmed Yakout</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000//about/">About</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('http://localhost:4000/assets/images/nn-1.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 class="page__title" itemprop="headline">
+        
+          Coursera Deep learning [Week 4]
+
+        
+      </h1>
+      
+        <p class="page__lead">Steps for training a neural network (Summery)
+
+</p>
+      
+      
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://unsplash.com"><strong>Unsplash</strong></a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="http://localhost:4000/assets/images/bio-photo.jpg" class="author__avatar" alt="Ahmed Yakout" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Ahmed Yakout</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Computer And Systems Engineering Student.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Alexandria, Egypt</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:iyakout@hotmail.com">
+            <meta itemprop="email" content="iyakout@hotmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/iYakout" itemprop="sameAs">
+            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://www.facebook.com/iyakout" itemprop="sameAs">
+            <i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/yakout" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://instagram.com/yakout/" itemprop="sameAs">
+            <i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/yakout" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.stackoverflow.com/users/5299155/yakout" itemprop="sameAs">
+            <i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Coursera Deep learning [Week 4]">
+    <meta itemprop="description" content="Steps for training a neural network (Summery)">
+    <meta itemprop="datePublished" content="September 04, 2017">
+    <meta itemprop="dateModified" content="November 03, 2016">
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Steps for training a neural network (Summery)</p>
+
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Steps</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#step-1-initialize-parameters" id="markdown-toc-step-1-initialize-parameters">Step 1: Initialize parameters</a></li>
+  <li><a href="#step-2-implement-forward-propagation" id="markdown-toc-step-2-implement-forward-propagation">Step 2: Implement forward propagation</a></li>
+  <li><a href="#step-3-compute-cost-function-j" id="markdown-toc-step-3-compute-cost-function-j">Step 3: Compute cost function (J)</a></li>
+  <li><a href="#step-4-implement-backward-propagation" id="markdown-toc-step-4-implement-backward-propagation">Step 4: Implement backward propagation</a></li>
+  <li><a href="#step-5-update-parameters" id="markdown-toc-step-5-update-parameters">Step 5: Update parameters</a></li>
+  <li><a href="#step-6-put-step-2-5-into-for-loop-num_iterations-gradient-descent" id="markdown-toc-step-6-put-step-2-5-into-for-loop-num_iterations-gradient-descent">Step 6: put step 2-5 into for loop num_iterations (gradient descent)</a></li>
+  <li><a href="#step-7-predict" id="markdown-toc-step-7-predict">Step 7: Predict</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<h2 id="step-1-initialize-parameters">Step 1: Initialize parameters</h2>
+
+<ul>
+  <li>The bias vectors are initialized with zeros.</li>
+  <li>The weights matrices are initialized with small random variables
+    <div class="language-python highlighter-rouge"><pre class="highlight"><code>  <span class="err"> </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.01</span><span class="err"> </span>
+</code></pre>
+    </div>
+    <p><code class="highlighter-rouge">0.01</code> can also be a variable that is chosen later but it’s not widely common. 
+  Choosing a big constant will affect the speed of gradient descent algorithm in some activation function like <code class="highlighter-rouge">tanh(z)</code> so the values will be either very small or very big and hence the gradients will be close to zero and will slow the algorithm.</p>
+  </li>
+</ul>
+
+<figure>
+	<a href="/assets/images/dl-tanh.png"><img src="/assets/images/dl-tanh.png" /></a>
+	<figcaption>tanh(z)</figcaption>
+</figure>
+
+<h2 id="step-2-implement-forward-propagation">Step 2: Implement forward propagation</h2>
+
+<ul>
+  <li>compute Z<sup>l</sup> and A<sup>l</sup> for all layers</li>
+  <li>linear forward (compute Z)</li>
+  <li>activation forward (compute A)</li>
+</ul>
+
+<h2 id="step-3-compute-cost-function-j">Step 3: Compute cost function (J)</h2>
+
+<ul>
+  <li>this is not included in the computations but it’s very useful for debugging and visualization.</li>
+</ul>
+
+<h2 id="step-4-implement-backward-propagation">Step 4: Implement backward propagation</h2>
+
+<ul>
+  <li>Use cached values from forward propagation to compute the gradients</li>
+  <li>Linear backward (compute dW, db, dA_prev)</li>
+  <li>Activation backward (com)</li>
+</ul>
+
+<h2 id="step-5-update-parameters">Step 5: Update parameters</h2>
+<ul>
+  <li>Update the parameters using the gradients computer in step 4.
+    <div class="highlighter-rouge"><pre class="highlight"><code>  theta = theta - alpha * dtheta
+</code></pre>
+    </div>
+    <p>Where <code class="highlighter-rouge">alpha</code> is the learning_rate and <code class="highlighter-rouge">dtheta</code> is the derivative of cost function <code class="highlighter-rouge">J</code> with respect to theta.</p>
+  </li>
+</ul>
+
+<h2 id="step-6-put-step-2-5-into-for-loop-num_iterations-gradient-descent">Step 6: put step 2-5 into for loop num_iterations (gradient descent)</h2>
+
+<h2 id="step-7-predict">Step 7: Predict</h2>
+
+<figure>
+	<a href="/assets/images/final_outline.png"><img src="/assets/images/final_outline.png" /></a>
+	<figcaption>(The model's structure is [LINEAR -&gt; RELU] × (L-1) -&gt; LINEAR -&gt; SIGMOID. I.e., it has L−1 layers using a ReLU activation function followed by an output layer with a sigmoid activation function.)</figcaption>
+</figure>
+
+<hr />
+
+<p>Notes:</p>
+<ul>
+  <li>we don’t calculate the input layer in the total number of NN layers</li>
+  <li>The input layer is layer zero (l = 0)</li>
+  <li>A0 = X</li>
+  <li>n0 = n_x</li>
+  <li>AL = Y^ (Y-hat)</li>
+  <li>1 layer NN is actually logistic regression (shallow NN)</li>
+  <li>More than 2 layer NN is called (Deep NN)</li>
+  <li>In deep learning, the “[LINEAR-&gt;ACTIVATION]” (compute the forward linear step followed by forward activation step) computation is counted as a single layer in the neural network, not two layers.</li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#knowledge" class="page__taxonomy-item" rel="tag">knowledge</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#deeplearning" class="page__taxonomy-item" rel="tag">deeplearning</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-11-03">November 03, 2016</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Coursera+Deep+learning+%5BWeek+4%5D%20http%3A%2F%2Flocalhost%3A4000%2Fdeeplearning%2Fdeep-learning-Week-4%2F" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdeeplearning%2Fdeep-learning-Week-4%2F" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fdeeplearning%2Fdeep-learning-Week-4%2F" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdeeplearning%2Fdeep-learning-Week-4%2F" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+    </div>
+
+    
+      <div class="page__comments">
+  
+    
+        <h4 class="page__comments-title">Leave a Comment</h4>
+        <section id="disqus_thread"></section>
+      
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/deeplearning/deep-learning-Week-4/" rel="permalink">Coursera Deep learning [Week 4]
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Steps for training a neural network (Summery)
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/yakout"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 Ahmed Yakout. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+  
+      
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/deeplearning/deep-learning-Week-4/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/deeplearning/deep-learning-[Week-4]"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://yakout.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    
+
+
+
+  </body>
+</html>
