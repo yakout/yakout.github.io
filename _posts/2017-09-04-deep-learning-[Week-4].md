@@ -1,6 +1,6 @@
 ---
 title:  "Coursera Deep learning [Week 4]"
-last_modified_at: 2016-11-03T11:45:04-04:00
+last_modified_at: 2017-09-04T11:45:04-04:00
 categories: 
   - deeplearning
 tags:
@@ -75,3 +75,5 @@ Notes:
 * More than 2 layer NN is called (Deep NN)
 * In deep learning, the "[LINEAR->ACTIVATION]" (compute the forward linear step followed by forward activation step) computation is counted as a single layer in the neural network, not two layers.
 
+**Resources**: [Deep Learning
+Specialization on Coursera, by Andrew Ng](https://www.coursera.org/specializations/deep-learning)
