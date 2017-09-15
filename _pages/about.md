@@ -9,7 +9,9 @@ I am a third year Computer And Systems Engineering student at Alexandria Univers
 
 I am here to document everthing I learn in my daily life, and also write about problems that I face and how I solved them, as I believe that this is the best way to guarantee an effective learning and a good, organized reference to look back in the future.
 
-I will write a blog post everyday, so hope you enjoy.
 
-Since I am a big fan of Shortcuts, and hate using the mouse, I will post a Shortcut tip every week under the category **shortcuts-tips**.
+[//]: # "I will write a blog post everyday, so hope you enjoy."
+
+[//]: # "Since I am a big fan of Shortcuts, and hate using the mouse, I will post a Shortcut tip every week under the category **shortcuts-tips**."
+
 ---
