@@ -1,5 +1,5 @@
 ---
-title:  "Coursera Deep learning [Week 4]"
+title:  "Coursera Deep learning [Course 1 - Week 4]"
 last_modified_at: 2017-09-04T11:45:04-04:00
 categories: 
   - deeplearning
@@ -9,6 +9,10 @@ header:
   overlay_image: /assets/images/nn-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 Steps for training a neural network (Summery)
 
@@ -25,7 +29,7 @@ Steps for training a neural network (Summery)
 	Choosing a big constant will affect the speed of gradient descent algorithm in some activation function like `tanh(z)` so the values will be either very small or very big and hence the gradients will be close to zero and will slow the algorithm.
 
 <figure>
-	<a href="/assets/images/dl-tanh.png"><img src="/assets/images/dl-tanh.png"></a>
+	<a href="/assets/images/dl/dl-tanh.png"><img src="/assets/images/dl/dl-tanh.png"></a>
 	<figcaption>tanh(z)</figcaption>
 </figure>
 
@@ -67,10 +71,10 @@ Steps for training a neural network (Summery)
 
 Notes:
 * we don’t calculate the input layer in the total number of NN layers
-* The input layer is layer zero (l = 0)
-* A0 = X
-* n0 = n_x
-* AL = Y^ (Y-hat)
+* The input layer is layer zero (\\(l\\) = 0)
+* \\(A\_{0} = X\\)
+* \\(n\_{0} = n_x\\)
+* \\(A_L = \widehat{Y}\\)
 * 1 layer NN is actually logistic regression (shallow NN)
 * More than 2 layer NN is called (Deep NN)
 * In deep learning, the "[LINEAR->ACTIVATION]" (compute the forward linear step followed by forward activation step) computation is counted as a single layer in the neural network, not two layers.
