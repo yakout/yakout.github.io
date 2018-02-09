@@ -6,16 +6,15 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-
 locale                   : "en"
 title                    : "Ahmed Yakout"
 title_separator          : "-"
 name                     : "Ahmed Yakout"
-description              : "My blog."
+description              : "Computer and Systems Engineering Student."
 url                      : "https://yakout.github.io"
 baseurl                  : "/"
 repository               : "yakout/yakout.github.io"
-teaser                   : "/assets/images/nn-1.jpg"
+teaser                   : "/assets/images/thumbs/01.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -78,12 +77,12 @@ author:
   bio              : "Computer And Systems Engineering Student."
   location         : "Alexandria, Egypt"
   email            : iyakout@hotmail.com
-  facebook         : iyakout
+  # facebook         : iyakout
   github           : yakout
-  instagram        : yakout/
+  # instagram        : yakout/
   linkedin         : yakout
   stackoverflow    : 5299155/yakout
-  twitter          : iYakout
+  # twitter          : iYakout
 
 
 # Reading Files
