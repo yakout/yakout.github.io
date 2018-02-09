@@ -6,7 +6,7 @@ categories:
 tags:
   - [experience,interview,espace]
 header:
-  overlay_image: /assets/images/espace-lwogo1.jpg
+  overlay_image: /assets/images/espace-logo1.jpg
   caption:
 ---
  
