@@ -1,11 +1,11 @@
 ---
 layout: splash
-permalink: /home/
+permalink: /projects/
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature2.jpg
+  overlay_image: /assets/images/white-book.jpg
   caption: 
-excerpt: '(Site is Under Constructions)<br/><br/><br/><br/><br/>'
+excerpt: '<br/><br/><br/>'
 feature_row:
   - image_path: /assets/images/dbms-project.png
     alt: "Java"
