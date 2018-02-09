@@ -1,5 +1,5 @@
 ---
-title:  "Coursera Deep learning [Course 1 - Week 4]"
+title:  "Coursera deep learning specialization by Andrew Ng [Course 1 - Week 4]"
 last_modified_at: 2017-09-04T11:45:04-04:00
 categories: 
   - deeplearning
@@ -35,11 +35,11 @@ Steps for training a neural network (Summery)
 
 ## Step 2: Implement forward propagation
 
-- compute Z<sup>l</sup> and A<sup>l</sup> for all layers
-- linear forward (compute Z)
-- activation forward (compute A)
+- compute \\(Z^{[l]}\\) and \\(A^{[l]}\\) for all layers
+- linear forward (compute \\(Z\\))
+- activation forward (compute \\(A\\))
 
-## Step 3: Compute cost function (J)
+## Step 3: Compute cost function (\\(J\\))
 
 - this is not included in the computations but it’s very useful for debugging and visualization.
 

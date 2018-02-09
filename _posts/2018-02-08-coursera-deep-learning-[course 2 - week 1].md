@@ -1,5 +1,5 @@
 ---
-title:  "Coursera Deep learning [Course 2 - Week 1]"
+title:  "Coursera deep learning specialization by Andrew Ng [Course 2 - Week 1]"
 last_modified_at: 2018-02-08T11:45:04-04:00
 categories: 
   - deeplearning
