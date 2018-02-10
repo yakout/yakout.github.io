@@ -71,7 +71,7 @@ My questions were:
 	}
 	```
 
-Other two questions that involved Javascript and c++ code that I can’t remember in details.
+Other two questions that involved Javascript and C++ code that I can’t remember in details.
 
 * Mobile 
 1. Do you prefer native apps or hybrid apps, why?
@@ -81,6 +81,7 @@ Other two questions that involved Javascript and c++ code that I can’t remembe
 ## Pros And Cons:
 Pros:
 - Interview process was relatively easy.
+
 Cons: 
 - They don’t use email for communication when there is a test they call you on the phone.
 - they don’t send rejection emails (When I asked the HR why? she told me that the number of application is big so can’t send to all of them! really!! how google manage over 10000+ applications then?)
