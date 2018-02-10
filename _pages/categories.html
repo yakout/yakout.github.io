@@ -1,0 +1,15 @@
+---
+layout: archive
+permalink: /categories/
+title: Categories
+author_profile: true
+---
+
+{% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ category_name }}</h2>
+    {% for post in site.categories[category_name] %}
+      <h2 class="category"><a href="{{ post.url }}">{{post.title}}</a></h2>
+    {% endfor %}
+    </br>
+{% endfor %}
