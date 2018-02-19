@@ -104,7 +104,7 @@ $$z^{[l]} = w^{[l]}*a^{[l-1]} + b^{l}$$
 shrinking weights will results in small \\(z\\) so the activation function say it's \\(tanh(z)\\) will be linear at small values of \\(z\\) which is simpler and will not cause overfitting.
 
 <figure>
-  <a href="/assets/images/linear_tanh_regularization.png"><img src="/assets/images/linear_tanh_regularization.png"></a>
+  <a href="/assets/images/dl/linear_tanh_regularization.png"><img src="/assets/images/dl/linear_tanh_regularization.png"></a>
   <figcaption>tanh</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ We don't apply dropout at test time because this adds noise to predictions, only
   * Data augmentation (like flipping or rotating the images to make more data)
   * Early stopping (Plot training set error with dev set error. when dev set error start rising, stop.)
   <figure>
-  <a href="/assets/images/early-stopping.png"><img src="/assets/images/early-stopping.png"></a>
+  <a href="/assets/images/dl/early-stopping.png"><img src="/assets/images/dl/early-stopping.png"></a>
   <figcaption>early stopping</figcaption>
   </figure>
 
