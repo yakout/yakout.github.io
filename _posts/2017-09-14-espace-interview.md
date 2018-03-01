@@ -43,7 +43,7 @@ First you choose 3 topics form about 10 topics in computer science like:
 My questions were:
 
 * Algorithms and Data structures 
-    1. What are Dead locks and how to prevent it.
+    1. What are Dead-locks and how to prevent them.
     2. How to detect Loops in linked list.
 
 <!-- 3. Players matching.
@@ -70,6 +70,8 @@ My questions were:
 	    Synchronized (D) {} 
 	}
 	```
+
+Check this Quora [answer](https://www.quora.com/What-is-the-problem-in-this-program-1)
 
 Other two questions that involved Javascript and C++ code that I can’t remember in details.
 
