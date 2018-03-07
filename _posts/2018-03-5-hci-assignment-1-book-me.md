@@ -12,7 +12,7 @@ header:
 
 HCI (Human Computer Interaction) Course Assignment. 2nd term, 3rd year (CSED'19).
 
-{% include toc title="Week Contents" %}
+{% include toc title="Contents" %}
 
 ## App Description
 Book Me is on the mission to connect book readers together.
@@ -21,13 +21,14 @@ We believe that the book you want to read (maybe about to buy) is already owned 
 
 
 ## Demo
+(You can touch the buttons and move between screens.)
 <iframe src="https://invis.io/9YG5QWSD4XP" width="420" height="880" frameBorder="0"></iframe>
 
 ## Notes
 - Not all details are included in the prototype like the borrower identification.
 since you must trust your borrower, he must scan his national id card or passport, and provide a phone number that he will receive the confirmation code on.
 
-- There was another idea to avoid any kind of scam that the borrower will pay for the book temporarly and will sent to him back once he returned the book.
+- There was another idea to avoid any kind of scam that the borrower will pay for the book temporarly and the payed money will be sent to him back once he returned the book.
 
 
 ## Useful for
