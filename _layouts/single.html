@@ -60,21 +60,57 @@ layout: default
     {% endif %}
   </article>
 
-  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
+
+  {% assign count = 0 %}
+  {% assign maxRelated = 4 %}
+
+  {% comment %}<!-- only show related on a post page when `related: true` and there is related posts -->{% endcomment %}
+  {% if page.id and page.related.size > 0 %}
     <div class="page__related">
       <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
       <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
+
+        {% for post in site.posts %}
+          {% if count >= maxRelated %}
+            {% break %}
+          {% endif %}
+          <!-- {% if page.related contains post.title %} -->
+              {% include archive-single.html type="grid" %}
+              {% assign count = count | plus: 1 %}
+          <!-- {% endif %} -->
         {% endfor %}
+
       </div>
     </div>
-  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
-  {% elsif page.id and page.related %}
+  {% comment %}<!-- otherwise show posts from the same category if no related posts found when `related: true` --> {% endcomment %}
+  {% elsif page.id and page.related and page.categories %}
     <div class="page__related">
       <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
       <div class="grid__wrapper">
+
+
+    {% for post in site.posts %}
+      {% if count >= maxRelated %}
+        {% break %}
+      {% endif %}
+      {% for category in post.categories %}
+        {% if post.url != page.url %}
+          {% if page.categories contains category %}
+            {% include archive-single.html type="grid" %}
+            {% assign count = count | plus: 1 %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+  {% comment %}<!-- if 'related=true' and no posts are shown yet show recent posts -->{% endcomment %}
+  {% if page.related and count == 0 %}
+    <div class="page__related">
+      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
+      <div class="grid__wrapper">
+
         {% for post in site.posts limit:4 %}
           {% include archive-single.html type="grid" %}
         {% endfor %}
