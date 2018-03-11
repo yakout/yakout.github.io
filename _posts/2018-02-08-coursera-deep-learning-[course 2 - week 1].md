@@ -10,14 +10,6 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.js">
-</script>
-
 {% include toc title="Week Contents" %}
 
 ## Train/Dev/Test Sets

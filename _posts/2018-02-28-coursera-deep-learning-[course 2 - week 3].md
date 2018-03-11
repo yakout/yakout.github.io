@@ -10,21 +10,13 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.js">
-</script>
-
 {% include toc title="Week Contents" %}
-
 
 Objectives:
 * Master the process of hyperparameter tuning.
 * Learn how to use TensorFlow.
 
+this is test $ x = y$
 
 ## Hyperparamter tuning
 We have seen a lot of hyperparamters (Grouped by importance of tuning):
@@ -192,8 +184,6 @@ Some notes about TensorFlow:
 
 ---
 
-<!-- Notes: -->
-<!-- * todo -->
 
 **Resources**: [Deep Learning
 Specialization on Coursera, by Andrew Ng](https://www.coursera.org/specializations/deep-learning)
