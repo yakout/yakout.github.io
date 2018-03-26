@@ -12,7 +12,9 @@ header:
 <p></p>
 
 
+{% include toc title="Contents" %}
 
+## Introduction
 In this phase, we design and implement a lexical analyzer generator tool.
 
 The lexical analyzer generator automatically construct a lexical analyzer from a regular expression description of a set of tokens. The tool construct a nondeterministic finite automata (NFA) for the given regular expressions, combine these NFAs together with a new starting state, convert the resulting NFA to a DFA, minimize it and emit the transition table for the reduced DFA together with a lexical analyzer program that simulates the resulting DFA machine.
@@ -23,8 +25,9 @@ The lexical analyzer generator tested using the given lexical rules of tokens of
 
 The generated lexical analyzer will be integrated with a generated parser which will be implemented in phase 2, lexical analyzer will be called by the parser to find the next token.
 
+## Specifications
 
-Lexical Rules:
+### Lexical Rules
 * The tokens of the given language are: identifiers, numbers, keywords, operators and punctuation symbols.
 * The token id matches a letter followed by zero or more letters or digits.
 * The token num matches an unsigned integer or a floating-point number. The number consists of one or more decimal digits, an optional decimal point followed by one or more digits and an optional exponent consisting of an E followed by one or more digits.
@@ -34,8 +37,7 @@ Lexical Rules:
 * Blanks between tokens are optional.
 
 
-
-Lexical Rules Input File Format:
+### Lexical Rules Input File Format
 * Lexical rules input file is a text file.
 * Regular definitions are lines in the form LHS = RHS
 * Regular expressions are lines in the form LHS: RHS
@@ -46,8 +48,8 @@ Lexical Rules Input File Format:
 * Any reserved symbol needed to be used within the language, is preceded by an escape backslash character.
 
 
-
-Input file example for the above lexical rules:
+## Example
+### Input file example for the above lexical rules
 ```
 letter = a-z | A-Z
 digit = 0-9
@@ -63,7 +65,7 @@ addop: \+ | \-
 mulop: \* | /
 ```
 
-Test Program
+### Test Program
 ```
 int sum , count , pass , 
 mnt; while (pass != 10)
@@ -73,7 +75,7 @@ mnt; while (pass != 10)
 ```
 
 
-Our Lexical Analyzer Output File Format:
+### Our Lexical Analyzer Tokens Output
 ```
 int
 id
@@ -101,8 +103,7 @@ num
 ```
 
 
-
-Transition Table:
+### Transition Table
 ```
 Total States: 44
 Start State(s): {0}
@@ -197,22 +198,27 @@ Acceptance State(s): 40
 
 
 
-Assumptions
-* In the rules file the negative sign should be escaped e.g sign = \+ | \-
-That’s because how we handle the reserved keywords, for us the dash ‘-’ is reserved keyword to specify ranges like A-Z, and any keywords symbol should be escaped like +, *, = ..
-
-
-This is the generated NFA for the above lexical rules (click on the image for full size)
+### Generated NFA
+(click on the image for full size)
 <figure>
 	<a href="/assets/images/NFA.png"><img src="/assets/images/NFA.png"></a>
 </figure>
 
 
-This is the generated minimized DFA for the above lexical rules:
+### Generated minimized DFA
 <figure>
 	<a href="/assets/images/DFA.png"><img src="/assets/images/DFA.png"></a>
 </figure>
 
+
+## Assumptions
+* In the rules file the negative sign should be escaped e.g sign = \+ | \-
+That’s because how we handle the reserved keywords, for us the dash ‘-’ is reserved keyword to specify ranges like A-Z, and any keywords symbol should be escaped like +, *, = ..
+
+
+## Last Notes 
+* This is a C++ project, and the source code will be public on github soon.
+* The visualization tool used is [Graphviz](http://graphviz.org/)
 
 ---
 
