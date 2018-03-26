@@ -9,14 +9,11 @@ header:
   overlay_image: /assets/images/andrew-childress-103062-unsplash.jpg
   caption: "Photo by Andrew Childress on [**Unsplash**](https://unsplash.com)"
 ---
-<p></p>
-
+Implementing a lexical analyzer generator tool.
 
 {% include toc title="Contents" %}
 
 ## Introduction
-In this phase, we design and implement a lexical analyzer generator tool.
-
 The lexical analyzer generator automatically construct a lexical analyzer from a regular expression description of a set of tokens. The tool construct a nondeterministic finite automata (NFA) for the given regular expressions, combine these NFAs together with a new starting state, convert the resulting NFA to a DFA, minimize it and emit the transition table for the reduced DFA together with a lexical analyzer program that simulates the resulting DFA machine.
 
 The generated lexical analyzer reads its input one character at a time, until it finds the longest prefix of the input, which matches one of the given regular expressions. It creates a symbol table and insert each identifier in the table. If more than one regular expression matches some longest prefix of the input, the lexical analyzer break the tie in favor of the regular expression listed first in the regular specifications. If a match exists, the lexical analyzer should produce the token class and the attribute to be called to print an error message and to continue looking for tokens.
@@ -26,7 +23,6 @@ The lexical analyzer generator tested using the given lexical rules of tokens of
 The generated lexical analyzer will be integrated with a generated parser which will be implemented in phase 2, lexical analyzer will be called by the parser to find the next token.
 
 ## Specifications
-
 ### Lexical Rules
 * The tokens of the given language are: identifiers, numbers, keywords, operators and punctuation symbols.
 * The token id matches a letter followed by zero or more letters or digits.
@@ -49,7 +45,7 @@ The generated lexical analyzer will be integrated with a generated parser which 
 
 
 ## Example
-### Input file example for the above lexical rules
+### Input file example for the lexical rules
 ```
 letter = a-z | A-Z
 digit = 0-9
@@ -75,7 +71,7 @@ mnt; while (pass != 10)
 ```
 
 
-### Our Lexical Analyzer Tokens Output
+### Our Lexical Analyzer Tokens File
 ```
 int
 id
@@ -198,21 +194,21 @@ Acceptance State(s): 40
 
 
 
-### Generated NFA
+### Generated NFA Graph
 (click on the image for full size)
 <figure>
 	<a href="/assets/images/NFA.png"><img src="/assets/images/NFA.png"></a>
 </figure>
 
 
-### Generated minimized DFA
+### Generated minimized DFA Graph
 <figure>
 	<a href="/assets/images/DFA.png"><img src="/assets/images/DFA.png"></a>
 </figure>
 
 
 ## Assumptions
-* In the rules file the negative sign should be escaped e.g sign = \+ | \-
+* In the rules file the negative sign should be escaped (e.g addop = \\+ | \\-)
 That’s because how we handle the reserved keywords, for us the dash ‘-’ is reserved keyword to specify ranges like A-Z, and any keywords symbol should be escaped like +, *, = ..
 
 
