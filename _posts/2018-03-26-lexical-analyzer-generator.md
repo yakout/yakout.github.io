@@ -5,12 +5,11 @@ categories:
   - csed
 tags:
   - [compiler, cpp]
+excerpt: "Implementing a lexical analyzer generator tool."
 header:
   overlay_image: /assets/images/andrew-childress-103062-unsplash.jpg
   caption: "Photo by Andrew Childress on [**Unsplash**](https://unsplash.com)"
 ---
-Implementing a lexical analyzer generator tool.
-
 {% include toc title="Contents" %}
 
 ## Introduction
