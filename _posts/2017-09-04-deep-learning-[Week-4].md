@@ -4,15 +4,12 @@ last_modified_at: 2017-09-04T11:45:04-04:00
 categories: 
   - deeplearning
 tags:
-  - knowledge
+  - knowledge  
+excerpt: "Steps for training a neural network (Summery)"
 header:
   overlay_image: /assets/images/nn-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
-
-
-Steps for training a neural network (Summery)
-
 {% include toc title="Steps" %}
 
 ## Step 1: Initialize parameters

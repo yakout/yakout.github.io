@@ -5,13 +5,11 @@ categories:
   - csed
 tags:
   - [books, assignment, app, prototype]
+excerpt: "HCI (Human Computer Interaction) Course Assignment. 2nd term, 3rd year (CSED'19)."
 header:
   overlay_image: /assets/images/book-b&w.jpg
   caption: "Photo by Natalie Collins on [**Unsplash**](https://unsplash.com)"
 ---
-
-HCI (Human Computer Interaction) Course Assignment. 2nd term, 3rd year (CSED'19).
-
 {% include toc title="Contents" %}
 
 ## App Description
