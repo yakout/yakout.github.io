@@ -4,8 +4,8 @@ permalink: /projects/
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/white-book.jpg
-  caption: 
-excerpt: '<br/><br/><br/>'
+  caption: Unsplash.
+excerpt: '<br/><br/>'
 feature_row:
   - image_path: /assets/images/dbms-project.png
     alt: "Java"
@@ -31,5 +31,6 @@ intro:
 
 {% include feature_row id="intro" type="center" %}
 # My projects
+Here are some of my projects, more projects can be found in my github account.
 <br/>
 {% include feature_row %}

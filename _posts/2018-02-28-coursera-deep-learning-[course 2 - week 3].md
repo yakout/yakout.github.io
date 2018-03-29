@@ -143,7 +143,7 @@ Criteria for choose a framework:
 
 
 TensorFlow Code example 
-```python
+{% highlight ruby %}
 import numpy as np
 import tensorflow as tf
 
@@ -167,7 +167,7 @@ print(session.run(w))
 for i in range(1000):
   session.run(optimizer, feed_dict = {x:coefficients})
 print(session.run(w))
-```
+{% endhighlight %}
 
 Some notes about TensorFlow:
 * Tensorflow is a programming framework used in deep learning

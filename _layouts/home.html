@@ -2,9 +2,15 @@
 layout: archive
 ---
 
+<!-- <style type="text/css">
+  .masthead { background-color: #24292e;} 
+  .greedy-nav { background-color: #24292e;}
+  .masthead__menu-item a {color: #FFFFFF;}
+</style> -->
+
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% for post in paginator.posts %}
+{% for post in paginator.posts limit:5 %}
   {% include archive-single.html %}
 {% endfor %}
 

@@ -3,8 +3,9 @@ title:  "Advanced Search Exercises"
 last_modified_at: 2018-02-23T11:45:04-04:00
 categories: 
   - general
+excerpt: "Sample for aima-exercises (Google Summer Of Code)"
 tags:
-  - knowledge
+  - 
 ---
 
 {% include toc title="Chapter Contents" %}

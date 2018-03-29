@@ -5,6 +5,11 @@ categories:
   - deeplearning
 tags:
   - knowledge
+related: [
+    "Coursera deep learning specialization by Andrew Ng [Course 2 - Week 2]", 
+    "Coursera deep learning specialization by Andrew Ng [Course 2 - Week 3]", 
+    "Coursera deep learning specialization by Andrew Ng [Course 1 - Week 4]"
+]
 header:
   overlay_image: /assets/images/nn-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
