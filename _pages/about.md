@@ -3,6 +3,9 @@ permalink: /about/
 title: "About"
 excerpt: "Ahmed Yakout"
 last_modified_at: 2017-09-9T14:28:13-05:00
+header:
+  overlay_image: /assets/images/me.jpg
+  caption: "A rare photo of me smiling 😁"
 ---
 
 I am a third year Computer And Systems Engineering student at Alexandria University, interested in Big Data, Machine learning, Deep learning, Distributed Systems, Parallel programming and all other things data!
