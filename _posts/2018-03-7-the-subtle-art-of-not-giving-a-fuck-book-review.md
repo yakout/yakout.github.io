@@ -42,4 +42,7 @@ Sounds boring, doesn’t it? That’s because these things are ordinary. But may
 
 > "Most self-help gurus ignore this deeper level of self-awareness as well. They take people who are miserable because they want to be rich, and then give them all sorts of advice on how to make more money, all the while ignoring important values-based questions: Why do they feel such a need to be rich in the first place? How are they choosing to measure success/failure for themselves? Is it not perhaps some particular value that’s the root cause of their unhappiness, and not the fact that they don’t drive a Bentley yet?"
 
+> "Pleasure is a false god. Research shows that people who focus their energy on superficial pleasures end up more anxious, more emotionally unstable, and more depressed. Pleasure is the most superficial form of life satisfaction and therefore the easiest to obtain and the easiest to lose."
+
+
 ---
