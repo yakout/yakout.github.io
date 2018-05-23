@@ -214,7 +214,7 @@ That’s because how we handle the reserved keywords, for us the dash ‘-’ is
 
 
 ## Last Notes 
-* This is a C++ project, and the source code will be public on github soon.
+* This is a C++ project, and the source code is available on github [here](http://github.com/yakout/compiler)
 * The visualization tool used is [Graphviz](http://graphviz.org/)
 
 ---
