@@ -3,7 +3,7 @@
     <img class="comment__avatar" src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=80">
   </div>
   <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
       {% unless include.url == blank %}
         <span itemprop="name"><a rel="external nofollow" itemprop="url" href="{{ include.url }}">{{ include.name }}</a></span>
       {% else %}
