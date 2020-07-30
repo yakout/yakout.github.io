@@ -2,18 +2,15 @@
 permalink: /about/
 title: "About"
 excerpt: "Ahmed Yakout"
-last_modified_at: 2017-09-9T14:28:13-05:00
+last_modified_at: 2020-07-30T18:48:13-05:00
 header:
   overlay_image: /assets/images/mm-home-page-feature2.jpg
 ---
 
-I am a Computer And Systems Engineering student at Alexandria University, interested in Big Data, Machine learning, Deep learning, Distributed Systems, Parallel programming and all other things data!
+I am a Computer And Systems Engineering Graduate from Alexandria University, interested in Big Data, Machine learning, Deep learning, Distributed Systems, Databases, Backend, Math, and all other things data!
 
-I am here to document everything I learn in my daily life, and also write about problems that I face and how I solved them, as I believe that this is the best way to guarantee an effective learning and a good, organized reference to look back in the future.
+I document what I learn in my daily life, and also write about problems that I face and how I solved them, as I believe that this is the best way to guarantee an effective learning and a good, organized reference to look back in the future.
 
-
-[//]: # "I will write a blog post everyday, so hope you enjoy."
-
-[//]: # "Since I am a big fan of Shortcuts, and hate using the mouse, I will post a Shortcut tip every week under the category **shortcuts-tips**."
+Note: I am available for weddings, and other events that are likely to include food, chocolate and cupcakes.
 
 ---
