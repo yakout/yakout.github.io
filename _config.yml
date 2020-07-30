@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Ahmed Yakout"
 title_separator          : "-"
 name                     : "Ahmed Yakout"
-description              : "Computer and Systems Engineering Student."
+description              : "Software Engineer at Instabug."
 url                      : "https://yakout.io"
 enforce_ssl              : yakout.io
 baseurl                  : "/"
@@ -48,10 +48,6 @@ bing_site_verification   : 2945F13273BB6321CB721DCDE867B643
 # Social Sharing
 twitter:
   username               : "iYakout"
-facebook:
-  username               : "iYakout"
-  app_id                 :
-  publisher              :
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -60,8 +56,6 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://twitter.com/iYakout"
-    - "https://facebook.com/iYakout"
-    - "https://instagram.com/yakout"
     - "https://www.linkedin.com/in/yakout"
 
 # Analytics
@@ -75,12 +69,10 @@ analytics:
 author:
   name             : "Ahmed Yakout"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Computer And Systems Engineering Student."
+  bio              : "Software Engineer at Instabug."
   location         : "Alexandria, Egypt"
-  email            : iyakout@hotmail.com
-  # facebook         : iyakout
+  email            : ahmed.k.yakout@gmail.com
   github           : yakout
-  # instagram        : yakout/
   linkedin         : yakout
   stackoverflow    : 5299155/yakout
   twitter          : iYakout
