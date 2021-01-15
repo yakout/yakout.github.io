@@ -221,5 +221,5 @@ defaults:
     values:
       layout: single
       author_profile: true
-theme: jekyll-theme-minimal
+theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "dark"
