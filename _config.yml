@@ -5,6 +5,16 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin  : "dark"
+
 # Site Settings
 locale                   : "en"
 title                    : "Ahmed Yakout"
@@ -221,5 +231,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "dark"
