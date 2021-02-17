@@ -2,12 +2,12 @@
 main:
   - title: "Home"
     url: /
-  - title: "Projects"
-    url: /projects/
+  # - title: "Projects"
+  #   url: /projects/
   - title: "Posts"
     url: /year-archive/
-  - title: "Categories"
-    url: /categories/
+  # - title: "Categories"
+  #   url: /categories/
   - title: "About"
     url: /about/
   # - title: "Sitemap"

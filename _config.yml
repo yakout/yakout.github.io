@@ -48,8 +48,10 @@ staticman:
       type               : "date"
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+
 atom_feed:
   path                   : # blank (default) uses feed.xml
+  hide                   : true
 
 # SEO Related
 google_site_verification : googled213cfbaf7d88e88
@@ -78,7 +80,7 @@ analytics:
 # Site Author
 author:
   name             : "Ahmed Yakout"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo3.jpg"
   bio              : "Software Engineer at Instabug."
   location         : "Alexandria, Egypt"
   email            : ahmed.k.yakout@gmail.com
@@ -231,3 +233,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yakout"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/iYakout"
