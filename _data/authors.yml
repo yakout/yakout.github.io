@@ -1,5 +1,4 @@
-yakout-light:
+yakout-linux:
   name             : "Ahmed Yakout"
   avatar           : "/assets/images/bio-photo3.jpg"
-  bio              : "Software Engineer at Instabug."
-  location         : "Alexandria, Egypt"
+  bio              : "\"Obviously, the person who had most influence on my career was Ken Thompson.\" ~ Dennis Ritchie"
