@@ -18,7 +18,7 @@ header:
 
 I found that I spend almost half of my day in the terminal, it has been my second home, so I try to understand every thing in it and how it works, every trick and tip I can do with it and install some cool and useful CLI tools out there to use them in my daily programming life to make it easier. So it was important for me to understand how it works.
 
-I did some research in this area and I wrote this blog post that talks about very important definitions in the terminal word like TTY and PTY which are very important terms that every developer and Linux advanced user should know.
+I did some research in this area and I wrote this blog post that talks about very important definitions in the terminal world like TTY and PTY which are very important terms that every developer and Linux advanced user should know.
 
 
 # History
@@ -73,6 +73,9 @@ This is a diagram of how teletypes used to work in early computers
 As we see, Teletype is connected through a pair of wires to UART (Universal Asynchronous Receiver and Transmitter). The UART driver manages the physical transmissions of bytes and sends them to the line discipline (LDISC) which is provided by the kernel to allow editing commands features like backspace, erase word, and clear line, it also handles special characters such as the interrupt character (CTRL + C).
 
 Advanced applications like vim and ssh disables these features by putting the line discipline into raw mode, so they can handle all these stuff themselves.
+
+💡 Check [man stty](https://man7.org/linux/man-pages/man1/stty.1.html)
+{: .notice--info}
 
 The kernel provides many line disciplines but only one is enabled by default and connected to a serial device. The default one, which provides line editing, is called `N_TTY`. 
 
