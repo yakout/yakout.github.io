@@ -73,6 +73,7 @@ for(byte b : s.toString().getBytes()) switch(b) {
 }
 ```
 But of course this is not the biggest problem now.
+
 ---
 
 The program takes as input two numbers let's say they are `(a)` and `(b)` respectively. We assigne to the vairable `y` the value of `a` and pass `b` to that weird `recurse` function.
@@ -111,14 +112,14 @@ The number `1073741824` in binary is
 ```
 There are `30` 0s and only the most significant bit is on, so if we `AND` any value smaller than `1073741824` with it we will get `0`.
 
-if started by passing the value `3` to the `recurse` function the if condition will always be false until and the `recruce` call in line 7 will get called until we reach a value bigger than `1073741824` and the bit number 31 is on, in this case the condition will be true and we will go to line 5.
+if we started by passing the value `3` to the `recurse` function the `if` condition will always be false until and the `recurse` call in line 7 will get called which we reach when we get a value bigger than `1073741824` and the bit number 31 is on, in this case the condition will be true and we will go to line 5.
 
 **How many calls we need to reach line 5?**<br />
 - 29 calls exactly.
 
 because
 ```
-2^29 * 3 = 1610612736 > 1073741824
+2^29 * 3 = 1610612736 > 1073741824 (and bit 31 is `1`)
 2^28 * 3 = 805306368 < 1073741824
 ```
 
