@@ -16,7 +16,7 @@ header:
 
 # Introduction
 
-I found that I spend almost half of my day in the terminal, it has been my second home, so I try to understand every thing in it and how it works, every trick and tip I can do with it and install some cool and useful CLI tools out there to use them in my daily programming life to make it easier. So it was important for me to understand how it works.
+I found that I spend almost half of my day in the terminal, it's like my second home, so I try to understand every thing about it and how it works, every trick and tip I can do with it and install some cool and useful CLI tools out there to use them in my daily programming life to make it easier. So it was important for me to understand how it works.
 
 I did some research in this area and I wrote this blog post that talks about very important definitions in the terminal world like TTY and PTY which are very important terms that every developer and Linux advanced user should know.
 
@@ -124,7 +124,7 @@ PTY is pair of master and slave sides, Writing to the master is exactly like typ
 
 when you open a terminal emulator program, it forks a process that requests a *pty* pair from the OS and starts a new session which is a group of processes running under control of a single user (i.e shell), it is defined by the first process that attach the pts (e.g bash).
 
-The slave part (pts) is represented by a file in /dev/pts/N where N is a number, you can know the what slave your session is attached to using `tty` or `ps` commands.
+The slave part (pts) is represented by a file in /dev/pts/N where N is a number, you can know what slave your session is attached to using `tty` or `ps` commands.
 
 The master part (ptm), is not represented on the file system. It is represented by a file descriptor obtained by the system call that creates a pty.
 
