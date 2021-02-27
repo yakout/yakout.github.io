@@ -17,9 +17,9 @@ header:
 - The bias vectors are initialized with zeros.
 - The weights matrices are initialized with small random variables 
 	```python
-	 np.random.randn(d1, d2) * 0.01 
+	np.random.randn(d1, d2) * 0.01
 	```
-	`0.01` can also be a variable that is chosen later but it’s not widely common. 
+	`0.01` can also be a variable that is chosen later but it’s not widely common.
 	Choosing a big constant will affect the speed of gradient descent algorithm in some activation function like `tanh(z)` so the values will be either very small or very big and hence the gradients will be close to zero and will slow the algorithm.
 
 <figure>
