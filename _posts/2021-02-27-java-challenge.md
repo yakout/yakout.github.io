@@ -40,7 +40,12 @@ public class Main {
 
 I found this intersting challenge while I was reading an article on Linus Åkesson [site](http://www.linusakesson.net/), It attracted my attention, and I spent hours trying to figure it out until I successfully did! It was worth it.
 
+---
+
 Here is my explanation to the program, and my thought process.
+
+:warning: Try to figure this out by yourself first
+{: .notice--warning}
 
 I am not a fan of Magic Numbers so first thing that took my attention were these numbers `1073741824`, `30`, `53`, `55`.
 
