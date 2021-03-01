@@ -260,4 +260,4 @@ Now if it encountered another `1` bit in the forth bit i.e (0b1100) which is bin
 It turns out that this way of multiplication is called [Ancient Egyptian multiplication](https://en.wikipedia.org/wiki/Ancient_Egyptian_multiplication) ;)
 {: .notice--info}
 
-Than was very intersting indeed, hope you enjoyed as much as I did.
+That was very intersting indeed, hope you enjoyed as much as I did.
