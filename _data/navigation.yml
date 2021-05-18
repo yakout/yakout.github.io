@@ -2,6 +2,8 @@
 main:
   - title: "Home"
     url: /
+  - title: "Blog"
+    url: http://blog.yakout.io/
   # - title: "Projects"
   #   url: /projects/
   - title: "Posts"
