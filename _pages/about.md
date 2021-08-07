@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/mm-home-page-feature2.jpg
 ---
 
-I am a Computer And Systems Engineering Graduate from Alexandria University, I used to have interests in Big Data, Machine learning, and Deep learning. But now I am focused more in Distributed Systems, Cloud Systems, Databases, Scalabilty, Performance Optimization, Operating Systems, and all other things Backend!
+I am a Computer And Systems Engineering Graduate from Alexandria University, I used to have interests in Big Data, Machine learning, and Deep learning. But now I am focused more in Distributed Systems, Cloud Systems, Databases, Scalability, Performance Optimization, Operating Systems, and all other things Backend!
 
 <!-- I document what I learn in my daily life, and also write about problems that I face and how I solved them, as I believe that this is the best way to guarantee an effective learning and a good, organized reference to look back in the future. -->
 
