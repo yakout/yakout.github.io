@@ -20,7 +20,7 @@ locale                   : "en"
 title                    : "Ahmed Yakout"
 title_separator          : "-"
 name                     : "Ahmed Yakout"
-description              : "Software Engineer at Instabug."
+description              : "Software Engineer."
 url                      : "https://yakout.io"
 enforce_ssl              : yakout.io
 baseurl                  : "/"
@@ -81,7 +81,7 @@ analytics:
 author:
   name             : "Ahmed Yakout"
   avatar           : "/assets/images/bio-photo3.jpg"
-  bio              : "Software Engineer at Instabug."
+  bio              : "Software Engineer."
   location         : "Alexandria, Egypt"
   email            : ahmed.k.yakout@gmail.com
   github           : yakout
