@@ -20,7 +20,7 @@ locale                   : "en"
 title                    : "Ahmed Yakout"
 title_separator          : "-"
 name                     : "Ahmed Yakout"
-description              : "Software Engineer."
+description              : "Software Engineer, SRE @ Google | Security & Privacy"
 url                      : "https://yakout.io"
 enforce_ssl              : yakout.io
 baseurl                  : "/"
