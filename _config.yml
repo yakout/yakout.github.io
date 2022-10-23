@@ -20,7 +20,7 @@ locale                   : "en"
 title                    : "Ahmed Yakout"
 title_separator          : "-"
 name                     : "Ahmed Yakout"
-description              : "Software Engineer, SRE @ Google | Security & Privacy"
+description              : "My personal website"
 url                      : "https://yakout.io"
 enforce_ssl              : yakout.io
 baseurl                  : "/"
@@ -81,7 +81,7 @@ analytics:
 author:
   name             : "Ahmed Yakout"
   avatar           : "/assets/images/bio-photo3.jpg"
-  bio              : "Software Engineer."
+  bio              : "Software Engineer, SRE @ Google | Security & Privacy"
   location         : "Waterloo, ON, Canada"
   email            : ahmed.k.yakout@gmail.com
   github           : yakout
