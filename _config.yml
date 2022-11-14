@@ -57,17 +57,12 @@ atom_feed:
 google_site_verification : googled213cfbaf7d88e88
 bing_site_verification   : 2945F13273BB6321CB721DCDE867B643
 
-# Social Sharing
-twitter:
-  username               : "iYakout"
-og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/iYakout"
     - "https://www.linkedin.com/in/yakout"
 
 # Analytics
@@ -87,7 +82,6 @@ author:
   github           : yakout
   linkedin         : yakout
   stackoverflow    : 5299155/yakout
-  twitter          : iYakout
 
 
 # Reading Files
@@ -240,6 +234,3 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/yakout"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/iYakout"
