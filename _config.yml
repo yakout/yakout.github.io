@@ -21,8 +21,8 @@ title                    : "Ahmed Yakout"
 title_separator          : "-"
 name                     : "Ahmed Yakout"
 description              : "My personal website"
-url                      : "https://yakout.io"
-enforce_ssl              : yakout.io
+url                      : "https://yakout.me"
+enforce_ssl              : yakout.me
 baseurl                  : "/"
 repository               : "yakout/yakout.github.io"
 teaser                   : "/assets/images/thumbs/01.jpg"
