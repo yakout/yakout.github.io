@@ -12,5 +12,7 @@ main:
   #   url: /categories/
   - title: "About"
     url: /about/
+  - title: "Now"
+    url: /now/
   # - title: "Sitemap"
   #   url: /sitemap/
