@@ -11,3 +11,5 @@ gem 'jekyll-feed'
 gem 'jekyll-include-cache'
 gem 'jekyll-remote-theme'
 gem 'webrick' # Jekyll 4 needs webrick
+
+gem "faraday-retry", "~> 2.4"
