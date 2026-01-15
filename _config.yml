@@ -75,7 +75,7 @@ analytics:
 # Site Author
 author:
   name             : "Ahmed Yakout"
-  avatar           : "/assets/images/bio-photo3.jpg"
+  avatar           : "/assets/images/bio-photo-gemini.png"
   bio              : "Software Engineer, SRE @ Google. Opinions are my own."
   location         : "Waterloo, ON, Canada"
   email            : ahmed.k.yakout@gmail.com
