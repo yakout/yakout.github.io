@@ -1,8 +1,8 @@
 ---
 permalink: /now/
 title: "Now"
-excerpt: "What I'm focused on right now"
-last_modified_at: 2026-01-12T00:00:00-05:00
+excerpt: "<span style='background-color: #000; color: #fff; padding: 0.25em 0.5em;'>What I'm focused on right now</span>"
+last_modified_at: 2026-01-16T00:00:00-05:00
 header:
   overlay_image: /assets/images/now-overlay.jpg
 ---
