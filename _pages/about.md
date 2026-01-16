@@ -2,16 +2,17 @@
 permalink: /about/
 title: "About"
 excerpt: "Ahmed Yakout"
-last_modified_at: 2022-10-22T23:43:00-05:00
+last_modified_at: 2026-01-15T00:00:00-05:00
 header:
-  overlay_image: /assets/images/mm-home-page-feature2.jpg
+  overlay_image: /assets/images/about-overlay.jpg
 ---
 
-Computer and Systems Engineering Graduate from Alexandria University, focused on Distributed Systems, Cloud Systems, Databases, Scalability, Performance Optimization, Security, and all other things systems!
+I am a Software Engineer and SRE at Google, based in Waterloo, ON, Canada.
 
+I graduated from Alexandria University with a degree in Computer and Systems Engineering. My professional interests include Distributed Systems, Cloud Infrastructure, Scalability, Performance Optimization, and Security.
 
-<a href="https://freebsdfoundation.org/donate" target="_blank">
-<img src="https://freebsdfoundation.org/wp-content/uploads/2015/12/proud_donor.gif" alt="Proud Donor" title="FreeBSD Foundation Donor" ></a>
+If you are looking to know more about what I am currently working on in my free time, take a look at my [/now](/now) page.
 
+*Opinions expressed here are my own.*
 
 ---
