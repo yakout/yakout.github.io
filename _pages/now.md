@@ -3,6 +3,8 @@ permalink: /now/
 title: "Now"
 excerpt: "What I'm focused on right now"
 last_modified_at: 2026-01-12T00:00:00-05:00
+header:
+  overlay_image: /assets/images/now-overlay.jpg
 ---
 
 *This is a [now page](https://nownownow.com/about), inspired by Derek Sivers.*
