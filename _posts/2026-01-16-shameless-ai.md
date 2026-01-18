@@ -79,4 +79,7 @@ While AI is a "shameless" collaborator that can get you half way there, the rema
 
 **Note:** The "good hype" I am referring to here is the integration of Agentic AI into our daily workflows. In my personal opinion, there are other distracting side hypes that have emerged as a result of this that you should make sure to filter out. Whatever your job field is, use AI in your work—don't let AI use you.
 
+
+Till the next hype ..
+
 ---
