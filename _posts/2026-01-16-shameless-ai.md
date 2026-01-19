@@ -12,7 +12,7 @@ header:
   overlay_image: /assets/images/shameless-ai-overlay.jpg
 ---
 
-The last time I really went deep into the AI world was 2019. Back then, my AI/ML knowledge was built on the foundations of manually tuning hyperparameters, selecting the right activation functions (ReLU vs. Leaky ReLU), and worrying about whether my CNN would overfit. It was the era of YOLO v3, Siamese networks for one-shot learning, and the beginning of the Transformer revolution with BERT (even though the "Attention is All You Need" paper and GPT-1 preceded it around 2017–2018)—all of which I spent months studying (and summarized in my [CS 435 notes](/csed/cs-435/)).
+The last time I really went deep into the AI world was 2019. Back then, my AI/ML knowledge was built on the foundations of manually tuning hyperparameters, selecting the right activation functions (ReLU vs. Leaky ReLU), and worrying about whether my CNN would overfit. It was the era of YOLO v3, Siamese networks for one-shot learning, and the beginning of the Transformer revolution with BERT (even though the "Attention is All You Need" paper and GPT-1 preceded it around 2017–2018), all of which I spent months studying (and summarized in my [CS 435 notes](/csed/cs-435/)).
 
 It felt like "science" in the most traditional sense. You’d carefully design an architecture, manage gradient clipping to prevent those dreaded exploding loss functions, and wait hours for a training loop to finish, only to find out you had a "brain fart" in your reward function.
 
@@ -22,15 +22,15 @@ Fast forward to today, and the landscape is unrecognizable. I’ve moved from tr
 
 ### The Shame of the Hype
 
-Hype is a double-edged sword. On one hand, it drives innovation and brings resources to new frontiers; on the other, it creates a noise floor that makes it hard to distinguish between progress and vanity. Human nature is naturally suspicious of hype—we are hardwired to be afraid of being "sold" something that isn't real. It’s a defense mechanism that helps us avoid wasted effort.
+Hype is a double-edged sword. On one hand, it drives innovation and brings resources to new frontiers; on the other, it creates a noise floor that makes it hard to distinguish between progress and vanity. Human nature is naturally suspicious of hype, we are hardwired to be afraid of being "sold" something that isn't real. It’s a defense mechanism that helps us avoid wasted effort.
 
-The trick is knowing when to ignore the noise and when that noise is actually a signal that your entire career is being refactored. In 2019, I could afford to pass on diving deeper into AI research or the industry because my core interest—distributed systems—was still the primary way the world built software. But today, the shift toward Agentic AI isn't just another library or a "cool new thing." It is a fundamental change in the programmable layer of the world.
+The trick is knowing when to ignore the noise and when that noise is actually a signal that your entire career is being refactored. In 2019, I could afford to pass on diving deeper into AI research or the industry because my core interest was still the primary way the world built software. But today, the shift toward Agentic AI isn't just another library or a "cool new thing." It is a fundamental change in the programmable layer of the world.
 
 It’s easy to be cynical. Every day there's a new "game-changing" repo, another `.ai` domain, and a thousand LinkedIn posts claiming that if you don't use *this specific prompt*, you’re already obsolete. The **hype fatigue** is real, and the "shame" associated with jumping on the bandwagon is understandable.
 
 But here’s the cold truth: <span style='background-color: #000; color: #fff; padding: 0.25em 0.5em;'>you don’t have an option. You need to keep up.</span>
 
-My views aren't based on the hype; they’re based on heavy, daily AI usage throughout 2025. After seeing hundreds of real-world implementations and watching how the engineering barrier to entry has evaporated, I’ve realized that the "shame" of using AI is actually just the sound of a profession being refactored in real-time. It might just be the "fear" that leads people to become defensive sometimes—and again, this is totally understandable. You can't control people's feelings; it's built into our nature.
+My views aren't based on the hype; they’re based on heavy, daily AI usage throughout 2025. After seeing hundreds of real-world implementations and watching how the engineering barrier to entry has evaporated, I’ve realized that the "shame" of using AI is actually just the sound of a profession being refactored in real-time. It might just be the "fear" that leads people to become defensive sometimes, and again, this is totally understandable. You can't control people's feelings; it's built into our nature.
 
 ### AI Amplification: The 10x Reality
 
@@ -38,7 +38,7 @@ The most immediate benefit is that coding is no longer the bottleneck. Informati
 
 Even the "boring" stuff is no longer a time-consuming task. It’s just execution.
 
-But more importantly, **Agentic AI will force better engineering practices.** If you want an agent to work effectively, you need better project documentation, clearer specs, and rigorous testing. You can’t "vibe code" your way through a complex system with an agent; you have to be precise. You have to understand the rationale behind the new abstractions of our era—concepts like the **ReAct pattern** (Reason + Act), **Tool-calling loops**, **Stateful Tool-calling**, and **DAG-based workflows** (Directed Acyclic Graphs, as seen in frameworks like *LangGraph* or *CrewAI*). If the LLM is the "brain," then patterns like **ReAct** provide the internal reasoning (the inner dialogue), while **DAGs** act as the **prefrontal cortex**—the part responsible for high-level planning, orchestration, and structural decision-making.
+But more importantly, **Agentic AI will force better engineering practices.** If you want an agent to work effectively, you need better project documentation, clearer specs, and rigorous testing. You can’t "vibe code" your way through a complex system with an agent; you have to be precise. You have to understand the rationale behind the new abstractions of our era. Concepts like the **ReAct pattern** (Reason + Act), **Tool-calling loops**, **Stateful Tool-calling**, and **DAG-based workflows** (Directed Acyclic Graphs, as seen in frameworks like *LangGraph* or *CrewAI*). If the LLM is the "brain," then patterns like **ReAct** provide the internal reasoning (the inner dialogue), while **DAGs** act as the **prefrontal cortex**, the part responsible for high-level planning, orchestration, and structural decision-making.
 
 ### But... The Cognitive Cost
 
@@ -49,7 +49,7 @@ It isn't all free speed. The downsides are subtle but heavy:
 
 ### The New Hierarchy of Languages
 
-We are witnessing a fundamental shift in the stack. I grew up as an "artisanal software engineer," manually writing complex C code and feeling that rush when it compiled without errors. I’m glad I had that experience—much like learning Assembly to understand the hardware. It gave me a mental model of how things work under the hood that the next generation might never have to develop at the same level of detail.
+We are witnessing a fundamental shift in the stack. I grew up as an "artisanal software engineer," manually writing complex C code and feeling that rush when it compiled without errors. I’m glad I had that experience. Much like learning Assembly to understand the hardware. It gave me a mental model of how things work under the hood that the next generation might never have to develop at the same level of detail.
 
 But we are moving one layer up. C, C++, Java, and other coding languages are becoming the new "low-level" languages. Human language is becoming the standard "High-Level Language." And who knows? Maybe in the future, we won’t even need human language in the loop at all, and we might be able to ship things at the speed of inference + thoughts.
 
@@ -58,9 +58,9 @@ But we are moving one layer up. C, C++, Java, and other coding languages are bec
 Don't be ashamed of using AI heavily. Don't listen to the people saying "AI is dumb" just to feel superior, or people who will make you feel incompetent for just using AI. "Artisanal" software engineering is almost dead.
 
 1. **Start with small, isolated tasks:** Don't go "YOLO mode" and let an agent delete bunch of stuff without review. Understand *what* they are doing, *why*, and *how*. Approve every step manually until you understand their failure modes.
-2. **Don’t Outsource Your Thinking:** The best engineers leverage AI to **learn** and build new skills, not just to execute. If you rely on AI for every minor task, you risk **skill atrophy**. This is a serious problem in modern development—don’t fall into the trap. Use AI to activate your brain, not to bypass it. Please, don't lose what makes you a great engineer. You worked very hard to build these skills :)
+2. **Don’t Outsource Your Thinking:** The best engineers leverage AI to **learn** and build new skills, not just to execute. If you rely on AI for every minor task, you risk **skill atrophy**. This is a serious problem in modern development. Don’t fall into the trap. Use AI to activate your brain, not to bypass it. Please, don't lose what makes you a great engineer. You worked very hard to build these skills :)
 3. **Focus:** Even if you have the power to build five things at once, don't. Focus on one project at a time. The context switch for a human-agent team is incredibly costly.
-4. **Security Awareness:** As your agentic workflow matures, consider self-hosting your models. This gives you a development environment that is secure, private, and independent of external APIs. It is crucial to stay aware of the risks of uncontrolled autonomous systems, especially those that can take input from external sources. This is a massive topic—my next post will dive deep into this: "Security from .exe to .md." Stay tuned.
+4. **Security Awareness:** As your agentic workflow matures, consider self-hosting your models. This gives you a development environment that is secure, private, and independent of external APIs. It is crucial to stay aware of the risks of uncontrolled autonomous systems, especially those that can take input from external sources. This is a massive topic, my next post will dive deep into this: "Security from .exe to .md." Stay tuned.
 5. **A tool is just a tool:** Ignore the posts claiming "this tool/model is the best" or "that model/tool is dead." Seriously, any frontier model and popular agentic tool nowadays can achieve most of your needs. Focus on the target you want to achieve and the engineering aspect of it. Focus on "Spec'ing," Context Engineering, and Task Management for your agents. This is what really matters. Your time is more valuable than arguing about which model is the best. It's subjective and a matter of personal experience.
 6. **Reading skills:** Believe it or not, this is going to be a much-needed skill now. Reading at high speed and having strong reading comprehension is crucial. You are going to spend most of your time reading (or maybe listening) than anything else.
 
@@ -68,18 +68,17 @@ Don't be ashamed of using AI heavily. Don't listen to the people saying "AI is d
 
 Treat AI like that brilliant colleague who knows every shortcut and obscure API. Don't just accept the output blindly; reverse-engineer the "hacks" it uses. My role as a senior engineer has fundamentally shifted from writing syntax to managing agent psychology, project state, and learning from these "hacks." And remember that AI is a fantastic partner, but a terrible boss:
 
-
 * **Context Engineering:** Stop stuffing your entire GitHub repo into the context window. That’s how you end up in "MCP hell." Instead, turn your `DESIGN.md` into [RFC 2119-like](https://www.ietf.org/rfc/rfc2119.txt) requirements in a `REQUIREMENTS.md` file. Review them rigorously. As Addy Osmani points out, [a good spec](https://addyosmani.com/blog/good-spec/) is the difference between a working product and a hallucinated mess.
+* **Prompt Engineering:** Prompts are the core of Agentic AI workflows. Learning how to master prompting is like learning how to ask the "right questions". They are very powerful that they can replace some software dependecies that are bloated with unused code. And they can also replace reviewing thousands of AI generated code by only reviewing the prompt.
 * **The Context War:** You have to balance **Stale Data vs. Token Count**. Managing project `.md` files is the new way of managing memory. If your documentation is stale, your agent is hallucinating. If it's too long, you're burning tokens for nothing.
 * **Prevent Agent Laziness (Shortcuts):** I’ve started explicitly instructing my agents to "unblock themselves." If a dependency is missing, install it. If a test fails, fix it and move on. Don't stop and ask me for permission for every trivial task.
-* **Reset, Don't Loop:** When an agent gets stuck in a loop or starts "brain farting," stop. Don't keep trying to fix the same context. **Reset.** Start fresh. Agents need a "break" to clear their state, exactly like humans do. Simplicity is key—avoid over-customization that leads to brittle workflows.
+* **Reset, Don't Loop:** When an agent gets stuck in a loop or starts "brain farting," stop. Don't keep trying to fix the same context. **Reset.** Start fresh. Agents need a "break" to clear their state, exactly like humans do. Simplicity is key. Avoid over-customization that leads to brittle workflows.
 
 ### Final thoughts
 
-While AI is a "shameless" collaborator that can get you half way there, the remaining work—the architectural soul and the edge-case correctness—is where human expertise is more critical than ever. AI might be a "super search engine" that removes friction, but it lacks the "wisdom" to understand intent or the catastrophic cost of a hallucinated CLI command in a production environment.
+While AI is a "shameless" collaborator that can get you half way there, the remaining work (the architectural soul and the edge-case correctness) is where human expertise is more critical than ever. AI might be a "super search engine" that removes friction, but it lacks the "wisdom" to understand intent or the catastrophic cost of a hallucinated CLI command in a production environment.
 
-**Note:** The "good hype" I am referring to here is the integration of Agentic AI into our daily workflows. In my personal opinion, there are other distracting side hypes that have emerged as a result of this that you should make sure to filter out. Whatever your job field is, use AI in your work—don't let AI use you.
-
+**Note:** The "good hype" I am referring to here is the integration of Agentic AI into our daily workflows. In my personal opinion, there are other distracting side hypes that have emerged as a result of this that you should make sure to filter out. Whatever your job field is, use AI in your work, don't let AI use you.
 
 Till the next hype ..
 
