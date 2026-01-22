@@ -1,0 +1,84 @@
+<div id="exfil-container" style="width: 100%; height: 500px; background: #000; border-radius: 8px; margin: 20px 0; overflow: hidden; position: relative; border: 1px solid #222;">
+  <div style="position: absolute; top: 20px; left: 20px; color: #ff0055; font-family: 'Courier New', monospace; font-size: 14px; z-index: 10; text-shadow: 0 0 10px #ff0055;">
+    CRITICAL ALERT: EXFILTRATION IN PROGRESS
+  </div>
+  <canvas id="exfil-canvas" style="display: block;"></canvas>
+</div>
+
+<script type="module">
+  import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
+
+  const container = document.getElementById('exfil-container');
+  const canvas = document.getElementById('exfil-canvas');
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setSize(container.clientWidth, container.clientHeight);
+  renderer.setPixelRatio(window.devicePixelRatio);
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(40, container.clientWidth / container.clientHeight, 0.1, 1000);
+  camera.position.set(10, 5, 15);
+  camera.lookAt(0, 0, 0);
+
+  // --- 1. THE LOCAL DATA GRID ---
+  const gridHelper = new THREE.GridHelper(10, 20, 0x00ffcc, 0x111111);
+  gridHelper.position.y = -2;
+  scene.add(gridHelper);
+
+  // --- 2. DATA NODES ---
+  const nodes = [];
+  const nodeGeo = new THREE.SphereGeometry(0.15, 12, 12);
+  const nodeMat = new THREE.MeshBasicMaterial({ color: 0x00ffcc });
+
+  for(let i = 0; i < 50; i++) {
+    const node = new THREE.Mesh(nodeGeo, nodeMat.clone());
+    node.position.set(Math.random() * 8 - 4, -1.8, Math.random() * 8 - 4);
+    node.userData.originalPos = node.position.clone();
+    node.userData.isStolen = false;
+    node.userData.speed = 0.05 + Math.random() * 0.1;
+    scene.add(node);
+    nodes.push(node);
+  }
+
+  // --- 3. THE SIPHON (A dark vortex in the sky) ---
+  const siphonGeo = new THREE.TorusGeometry(1, 0.05, 16, 100);
+  const siphonMat = new THREE.MeshBasicMaterial({ color: 0xff0055 });
+  const siphon = new THREE.Mesh(siphonGeo, siphonMat);
+  siphon.rotation.x = Math.PI/2;
+  siphon.position.set(0, 8, 0);
+  scene.add(siphon);
+
+  function animate() {
+    requestAnimationFrame(animate);
+
+    siphon.rotation.z += 0.05;
+    siphon.scale.setScalar(1 + Math.sin(Date.now() * 0.01) * 0.1);
+
+    nodes.forEach(n => {
+      if (!n.userData.isStolen) {
+        if (Math.random() > 0.99) n.userData.isStolen = true;
+      } else {
+        // Pull toward siphon
+        n.position.y += n.userData.speed;
+        n.position.x *= 0.98;
+        n.position.z *= 0.98;
+        n.material.color.setHex(0xff0055);
+        
+        if (n.position.y > 8) {
+          n.position.copy(n.userData.originalPos);
+          n.userData.isStolen = false;
+          n.material.color.setHex(0x00ffcc);
+        }
+      }
+    });
+
+    renderer.render(scene, camera);
+  }
+
+  window.addEventListener('resize', () => {
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(container.clientWidth, container.clientHeight);
+  });
+
+  animate();
+</script>
