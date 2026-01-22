@@ -78,10 +78,10 @@ Isolation is your best defense. Never let an AI agent have full access to your m
 
 ## Conclusion
 
-We are moving from a world where we feared *bad code* to a world where we must fear *bad text*. The type of file no longer matters. If an AI agent can read it, an attacker can use it.
-
 With all of the current hype, and people (especially those with non-technical backgrounds) rushing to be more productive and achieve "10x speed," security is unfortunately underestimated. I am intentionally making this post as simple as possible for non-technical readers to understand the risks.
 
-The next time you ask an agent to "read the docs," remember: you aren't just reading a file, you are letting it run code in your workflow.
+We are moving from a world where we feared *bad code* to a world where we must fear *bad intention* in any form including text and image. The type of file no longer matters. If an AI agent can read it, an attacker can use it.
+
+The next time you ask an agent to "read the docs," remember: you aren't just reading a file, you are letting it "execute orders" in your workflow.
 
 ---
