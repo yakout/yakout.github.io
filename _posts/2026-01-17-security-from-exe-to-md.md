@@ -67,7 +67,7 @@ As engineers, we must treat **Context** as a danger zone. Luckily, the same secu
 
 Isolation is your best defense. Never let an AI agent have full access to your main computer.
 
-* **Use Virtual Machines (VMs):** This is the best way to stay safe.
+* **Use Virtual Machines (VMs) and Sandboxing:** This is the best way to stay safe.
 * **Start Fresh:** Use temporary spaces and delete them after the agent is done.
 
 ### 2. Backups and Limits
