@@ -13,3 +13,5 @@ node_modules
 npm-debug.log*
 _site/
 vendor/
+.claude/
+jekyll.log

@@ -25,21 +25,13 @@ Due to compatibility issues with Ruby 2.6 and ARM64 architecture, specific confi
 
 ## Running the Server
 
-To start the local development server:
-
-```bash
-bundle exec jekyll serve
-```
-
-### Accessing via Tailscale / Network
-
-If you want to access the server from another device (e.g., via Tailscale IP), bind to all interfaces:
+To start the local development server and make it accessible across your network (e.g., via Tailscale IP), bind to all interfaces:
 
 ```bash
 bundle exec jekyll serve --host 0.0.0.0
 ```
 
-The site will be accessible at `http://<your-tailscale-ip>:4000/`.
+The site will be accessible at `http://127.0.0.1:4000/` locally or `http://<your-tailscale-ip>:4000/` from other devices.
 
 ## Troubleshooting
 
