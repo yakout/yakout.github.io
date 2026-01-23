@@ -73,7 +73,7 @@ Isolation is your best defense. Never let an AI agent have full access to your m
 ### 2. Backups and Limits
 
 * **Always have Backups:** An agent could accidentally (or on purpose) delete your work. Keep offline backups of your important data.
-* **Give Less Info:** Do not give the agent access to your whole home folder. Only give it the few files it needs for the current task.
+* **Give Less Info (Least Privilege):** Do not give the agent access to your whole home folder. Only give it the few files it needs for the current task.
 * **Verify Everything:** If something looks odd, check it. Use tools to see if an image or voice was made by AI.
 
 ## Conclusion
