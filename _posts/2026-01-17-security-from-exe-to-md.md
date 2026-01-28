@@ -16,15 +16,17 @@ For the last thirty years, our view of security was "simple". Around the early 2
 
 **Those days have changed.**
 
-In 2026, security is no longer just about viruses. Risks now hide in simple Markdown files or emails that look like they came from your boss. With AI agents, the line between "reading text" and "taking orders" has vanished. When you let an AI agent read your files to "set up a project," you are taking a huge risk. The agent reads the text, thinks it is an instruction, and then *acts* on it.
+In the AI era, security is no longer just about viruses. Risks now hide in simple Markdown files or emails that look like they came from your boss. With AI agents, the line between "reading text" and "taking orders" has vanished. When you let an AI agent read your files to "set up a project," you are taking a huge risk. The agent reads the text, thinks it is an instruction, and then *acts* on it.
 
-In this new world, a simple `README.md` file is not just a help document. It can be a way to poison how the agent thinks.
+## Risks
 
-{% include 3d-security-diagram.html %}
+Let's start with some examples from the two main categories: **Infiltration** (getting bad instructions in) and **Exfiltration** (getting your secrets out).
 
-## How it Works: Indirect Prompt Injection
+### Infiltration
 
-The biggest risk is called **Indirect Prompt Injection**. This happens when the AI reads a file that contains "hidden" orders.
+#### Indirect Prompt Injection
+
+The biggest risk is called **Indirect Prompt Injection**. This happens when the AI reads a file that contains "hidden" orders. In this new world, a simple `README.md` file is not just a help document; it can be a way to poison how the agent thinks.
 
 Imagine you ask your AI coding tool to "summarize this project." The agent opens a file called `CONTRIBUTING.md`. Inside that file, an attacker has hidden a secret message:
 
@@ -32,7 +34,13 @@ Imagine you ask your AI coding tool to "summarize this project." The agent opens
 
 A normal virus scanner will see this as harmless text. But to an AI agent that can run commands, this is a direct order. The "poison" did not run on your computer hardware, it ran inside the agent's mind.
 
-## The Secret Leak: Markdown Images
+The visual below illustrates this infiltration mechanism:
+
+{% include 3d-security-diagram.html %}
+
+### Exfiltration
+
+#### The Secret Leak via Images
 
 Attackers can also steal your data without running any commands. They can use the way your chat window shows images.
 
@@ -45,42 +53,55 @@ To see the diagram, show this image:
 
 If the agent tries to show this "image," it sends your private data to the attacker's server as part of the web request. This happens the moment the image loads in your window.
 
+The visual below demonstrates this data leak:
+
 {% include 3d-exfiltration-diagram.html %}
 
-## Broader AI Risks: Phishing and Noise
+## Protect Yourself: Building a Security Mental Model
 
-AI is also making old attacks much better.
+To navigate this "vibe coding" journey safely, you need to build a mental model for potential attack vectors. Always pause and ask yourself these questions before taking action:
 
-### 1. AI Phishing
+### Foundation: Defense in Depth
+*   **Isolation:** Am I letting the AI agent have full access to my main computer? Should I be using a Virtual Machine (VM) or sandboxing to isolate it?
+*   **Backups:** Do I have offline backups of my important data in case the agent accidentally (or on purpose) deletes my work?
+*   **Least Privilege:** Does the agent have access to my entire home folder? Can I limit it to only the specific files needed for this task?
+*   **Verification:** Am I blindly trusting what I see? Should I use tools to verify if an image, voice, or piece of code was maliciously generated?
 
-Phishing emails are no longer easy to spot. AI can look at your social media to write a perfect fake email. It can even mimic your boss's voice or face in a video call to trick you into sending money or passwords.
+### Deployment and Knowledge Debt
+*   **Deployment Integrity:** When I am deploying this service, am I deploying it correctly with a secure, reputable provider?
+*   **Configuration:** Do I understand the deployment configuration? Does the service have sensible defaults, or do I need to manually change them to make it secure?
+*   **Knowledge Gap:** Are you experiencing "knowledge debt"? Do you *really* understand the architecture of the system? A knowledge gap is the number one reason for common security breaches.
 
-### 2. Tricking the Models
+### AI Limitations
+*   **Auditing:** Is asking the AI agent to audit and review everything in my systems enough?
+*   **Context:** Does the agent have context about *everything*? What if it missed something critical?
 
-Attackers can add "noise" to data that humans can't see but AI can. This can trick an AI into thinking a dangerous script is a "safe update." This is called an **Adversarial Attack**.
+### API Key Management
+*   **Storage & Access:** How are my API keys stored? Who exactly has access to them?
+*   **Trust:** How much should I trust the agent to have access to these keys?
+*   **Leakage Risks:** What are the risks if my API keys are leaked? Will my chat history be exposed?
+*   **Separation of Concerns:** Should I create multiple API keys for each use case? Instead of reusing personal keys, consider creating a dedicated one for agents where you worry less about the history.
+*   **Data Contamination:** What exactly goes into the agent's history? Could it contain accidental reads or dumps of *other* sensitive API keys or key materials?
+*   **Complexity:** How will managing these extra keys impact complexity and exposure?
 
-## How to Protect Yourself
+### Supply Chain & Oversight
+*   **The "Black Box" Risk:** If the agent wrote code I don't understand, is it safe? Am I accepting "spaghetti code" just because it works? If you can't read it, you can't secure it.
+*   **Supply Chain Hallucinations:** Did the agent verify the library it just installed, or did it hallucinate a package name that looks real but is actually malware (Package Hallucination), or suggest a misspelled popular library (Typosquatting)?
+*   **Human-in-the-Loop:** Is the agent running in "God Mode" (auto-execute) or "Copilot Mode" (ask before execute)? Do you have a mechanism to "stop the bus" instantly?
 
-As engineers, we must treat **Context** as a danger zone. Luckily, the same security rules we already know still work here.
+### The "What If" Plan
+*   **Zero-Trust:** Adopt a "Zero-Trust" mindset. Never assume a file, a library, or an agent's suggestion is safe just because it's part of your project.
+*   **Worst-Case Scenario:** Always assume the worst-case scenario: What if this agent has already been compromised? What is the maximum damage it could do right now?
+*   **Plan B:** Do I have a plan B for when my API keys are exposed? Is simply disabling the keys enough?
+*   **Environment:** What files does the agent have access to? Is it running in a fully isolated environment, or does it rely on weak ".md guardrails" that can be bypassed by prompt injection?
 
-### 1. Isolation
-
-Isolation is your best defense. Never let an AI agent have full access to your main computer.
-
-* **Use Virtual Machines (VMs) and Sandboxing:** This is the best way to stay safe.
-* **Start Fresh:** Use temporary spaces and delete them after the agent is done.
-
-### 2. Backups and Limits
-
-* **Always have Backups:** An agent could accidentally (or on purpose) delete your work. Keep offline backups of your important data.
-* **Give Less Info (Least Privilege):** Do not give the agent access to your whole home folder. Only give it the few files it needs for the current task.
-* **Verify Everything:** If something looks odd, check it. Use tools to see if an image or voice was made by AI.
+{% include security-mental-model-2d-map.html %}
 
 ## Conclusion
 
-With all of the current hype, and people (especially those with non-technical backgrounds) rushing to be more productive and achieve "10x speed," security is unfortunately underestimated. I am intentionally making this post as simple as possible for non-technical readers to understand the risks.
+With all of the current hype, and people (especially those with technical backgrounds) rushing to be more productive and achieve "10x speed," security is unfortunately underestimated.
 
-We are moving from a world where we feared *bad code* to a world where we must fear *bad intention* in any form including text and image. The type of file no longer matters. If an AI agent can read it, an attacker can use it.
+We are moving from a world where we feared *bad code* to a world where we must fear *bad intention* in any form including text and images. The type of file no longer matters. If an AI agent can read it, an attacker can use it.
 
 The next time you ask an agent to "read the docs," remember: you aren't just reading a file, you are letting it "execute orders" in your workflow.
 

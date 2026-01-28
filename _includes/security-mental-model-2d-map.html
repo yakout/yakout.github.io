@@ -1,0 +1,107 @@
+<div class="security-map-container" style="width: 100%; margin: 20px 0; background: #0f111a; border-radius: 8px; border: 1px solid #2a2f45; overflow: hidden; position: relative;">
+  <div style="position: absolute; top: 10px; left: 15px; color: #556677; font-family: sans-serif; font-size: 10px; letter-spacing: 1px;">AI Security Mental Model</div>
+  <svg viewBox="0 0 850 450" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; font-family: 'Courier New', monospace;">
+    
+    <!-- Definitions -->
+    <defs>
+      <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+        <feMerge>
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+      <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#2a2f45;stop-opacity:0" />
+        <stop offset="50%" style="stop-color:#2a2f45;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#2a2f45;stop-opacity:0" />
+      </linearGradient>
+    </defs>
+
+    <!-- Background Grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2430" stroke-width="1"/>
+    </pattern>
+    <rect width="100%" height="100%" fill="#0f111a" />
+    <rect width="100%" height="100%" fill="url(#grid)" />
+
+    <!-- --- CENTRAL HUB: DEFENSE IN DEPTH (FOUNDATION) --- -->
+    <g transform="translate(425, 225)">
+      <!-- Pulsing Core -->
+      <circle r="50" fill="#0f111a" stroke="#fff" stroke-width="2" opacity="0.8" />
+      <circle r="45" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="5,3">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="-5" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">DEFENSE</text>
+      <text x="0" y="12" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">IN DEPTH</text>
+      
+      <!-- Satellites (Foundation Points) -->
+      <g transform="translate(0, -65)">
+        <text x="0" y="0" text-anchor="middle" fill="#888" font-size="10">ISOLATION</text>
+        <line x1="0" y1="5" x2="0" y2="15" stroke="#444" stroke-width="1"/>
+      </g>
+      <g transform="translate(0, 65)">
+         <text x="0" y="8" text-anchor="middle" fill="#888" font-size="10">BACKUPS</text>
+         <line x1="0" y1="-15" x2="0" y2="-5" stroke="#444" stroke-width="1"/>
+      </g>
+    </g>
+
+
+    <!-- --- BRANCH 1: DEPLOYMENT (Blue, Top Left) --- -->
+    <path d="M 380 200 L 250 80 L 150 80" fill="none" stroke="#00aaff" stroke-width="3" stroke-linecap="round" />
+    <g transform="translate(150, 80)">
+      <circle r="5" fill="#0f111a" stroke="#00aaff" stroke-width="2"/>
+      <text x="0" y="-15" text-anchor="middle" fill="#00aaff" font-weight="bold" font-size="12">DEPLOYMENT</text>
+      <text x="0" y="20" text-anchor="middle" fill="#5599bb" font-size="10">Config & Debt</text>
+    </g>
+
+
+    <!-- --- BRANCH 2: AI RISKS (Purple, Top Right) --- -->
+    <path d="M 470 200 L 600 80 L 700 80" fill="none" stroke="#aa00ff" stroke-width="3" stroke-linecap="round" />
+    <g transform="translate(700, 80)">
+      <circle r="5" fill="#0f111a" stroke="#aa00ff" stroke-width="2"/>
+      <text x="0" y="-15" text-anchor="middle" fill="#aa00ff" font-weight="bold" font-size="12">AI LIMITS</text>
+      <text x="0" y="20" text-anchor="middle" fill="#9955bb" font-size="10">Context & Audit</text>
+    </g>
+
+
+    <!-- --- BRANCH 3: API KEYS (Orange, Bottom Left) --- -->
+    <path d="M 380 250 L 250 370 L 150 370" fill="none" stroke="#ffaa00" stroke-width="3" stroke-linecap="round" />
+    <g transform="translate(150, 370)">
+      <circle r="5" fill="#0f111a" stroke="#ffaa00" stroke-width="2"/>
+      <text x="0" y="-15" text-anchor="middle" fill="#ffaa00" font-weight="bold" font-size="12">API KEYS</text>
+      <text x="0" y="20" text-anchor="middle" fill="#bb9955" font-size="10">Least Privilege</text>
+    </g>
+
+
+    <!-- --- BRANCH 4: SUPPLY CHAIN (Red, Bottom Right) --- -->
+    <path d="M 470 250 L 600 370 L 700 370" fill="none" stroke="#ff0044" stroke-width="3" stroke-linecap="round" filter="url(#neon-glow)" />
+    <g transform="translate(700, 370)">
+      <circle r="5" fill="#0f111a" stroke="#ff0044" stroke-width="2"/>
+      <text x="0" y="-15" text-anchor="middle" fill="#ff0044" font-weight="bold" font-size="12">SUPPLY CHAIN</text>
+      <text x="0" y="20" text-anchor="middle" fill="#bb5555" font-size="10">Malware & Review</text>
+      <!-- Warning Signal -->
+      <circle r="3" fill="#ff0044" cx="60" cy="-20">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+
+    <!-- --- BRANCH 5: "WHAT IF" (Green, Middle Left) --- -->
+    <path d="M 375 225 L 120 225" fill="none" stroke="#00ff66" stroke-width="2" stroke-dasharray="8,4" />
+    <g transform="translate(120, 225)">
+      <rect x="-60" y="-20" width="120" height="40" rx="20" fill="#0f111a" stroke="#00ff66" stroke-width="2"/>
+      <text x="0" y="5" text-anchor="middle" fill="#00ff66" font-weight="bold" font-size="11">ZERO TRUST</text>
+      <text x="0" y="30" text-anchor="middle" fill="#55bb88" font-size="10">Worst Case Scenario</text>
+    </g>
+
+    <!-- --- BRANCH 6: OVERSIGHT (Yellow, Middle Right) --- -->
+     <path d="M 475 225 L 730 225" fill="none" stroke="#ffff00" stroke-width="2" stroke-dasharray="8,4" />
+    <g transform="translate(730, 225)">
+      <rect x="-60" y="-20" width="120" height="40" rx="20" fill="#0f111a" stroke="#ffff00" stroke-width="2"/>
+      <text x="0" y="5" text-anchor="middle" fill="#ffff00" font-weight="bold" font-size="11">HUMAN LOOP</text>
+       <text x="0" y="30" text-anchor="middle" fill="#bbbb55" font-size="10">"Stop the Bus"</text>
+    </g>
+
+  </svg>
+</div>
