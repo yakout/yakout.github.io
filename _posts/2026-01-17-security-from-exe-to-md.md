@@ -99,7 +99,7 @@ To navigate this "vibe coding" journey safely, you need to build a mental model 
 
 ## Conclusion
 
-With all of the current hype, and people (especially those with technical backgrounds) rushing to be more productive and achieve "10x speed," security is unfortunately underestimated.
+With all of the current hype, and people (especially those with non-technical backgrounds) rushing to be more productive and achieve "10x speed," security is unfortunately underestimated.
 
 We are moving from a world where we feared *bad code* to a world where we must fear *bad intention* in any form including text and images. The type of file no longer matters. If an AI agent can read it, an attacker can use it.
 
