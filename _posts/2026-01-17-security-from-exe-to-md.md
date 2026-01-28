@@ -36,7 +36,7 @@ A normal virus scanner will see this as harmless text. But to an AI agent that c
 
 The visual below illustrates this infiltration mechanism:
 
-{% include 3d-security-diagram.html %}
+{% include 3d-infiltration-diagram.html %}
 
 ### Exfiltration
 
