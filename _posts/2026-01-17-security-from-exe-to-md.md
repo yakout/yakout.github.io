@@ -103,6 +103,8 @@ With all of the current hype, and people (especially those with non-technical ba
 
 We are moving from a world where we feared *bad code* to a world where we must fear *bad intention* in any form including text and images. The type of file no longer matters. If an AI agent can read it, an attacker can use it.
 
+As we navigate this journey, I anticipate we will see more security standards specifically for agents. For example, existing concepts like handshakes and 2FA could be used to establish a "secure session" with an agent in an **"Agent Shell"** or **"Agent Runtime"**, which would significantly reduce the risk of indirect prompt injection.
+
 The next time you ask an agent to "read the docs," remember: you aren't just reading a file, you are letting it "execute orders" in your workflow.
 
 ---
